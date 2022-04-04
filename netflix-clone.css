@@ -1,0 +1,409 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  color: white;
+  font-size: 26px;
+}
+
+body .container header {
+  overflow: hidden;
+  position: absolute;
+  padding: 35px 50px;
+  width: 100%;
+  z-index: 10;
+}
+
+body .container header .logo {
+  float: left;
+}
+
+body .container header .logo img {
+  width: 170px;
+}
+
+body .container header .signin {
+  float: right;
+}
+
+body .container header .signin .btn-open {
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 99;
+}
+
+body .container .section1 {
+  height: 80vh;
+  position: relative;
+}
+
+body .container .section1 .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+
+body .container .section1 .heading h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+body .container .section1 .heading h4 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 20px;
+}
+
+body .container .section1 .heading h6 {
+  font-size: 20px;
+}
+
+body .container .section1 .heading .getstarted {
+  position: relative;
+  display: inline-block;
+}
+
+body .container .section1 .heading .getstarted input[type=email], body .container .section1 .heading .getstarted button {
+  height: 60px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+body .container .section1 .heading .getstarted input[type=email] {
+  width: 450px;
+  margin-right: -6px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+body .container .section1 .heading .getstarted input[type=email] + span {
+  color: #999;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+body .container .section1 .heading .getstarted button {
+  width: 220px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+body .container .section2,
+body .container .section3,
+body .container .section4,
+body .container .section5 {
+  height: 500px;
+  position: relative;
+}
+
+body .container .section2 .inner,
+body .container .section3 .inner,
+body .container .section4 .inner,
+body .container .section5 .inner {
+  width: 1250px;
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .container .section2 .inner .desc, body .container .section2 .inner .preview,
+body .container .section3 .inner .desc,
+body .container .section3 .inner .preview,
+body .container .section4 .inner .desc,
+body .container .section4 .inner .preview,
+body .container .section5 .inner .desc,
+body .container .section5 .inner .preview {
+  float: left;
+}
+
+body .container .section2 .inner .desc,
+body .container .section3 .inner .desc,
+body .container .section4 .inner .desc,
+body .container .section5 .inner .desc {
+  padding-top: 40px;
+  width: 60%;
+}
+
+body .container .section2 .inner .desc h2,
+body .container .section3 .inner .desc h2,
+body .container .section4 .inner .desc h2,
+body .container .section5 .inner .desc h2 {
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+body .container .section2 .inner .preview,
+body .container .section3 .inner .preview,
+body .container .section4 .inner .preview,
+body .container .section5 .inner .preview {
+  text-align: center;
+  width: 40%;
+}
+
+body .container .section2 .inner .preview img,
+body .container .section3 .inner .preview img,
+body .container .section4 .inner .preview img,
+body .container .section5 .inner .preview img {
+  height: 350px;
+}
+
+body .container .faq {
+  padding: 80px 0;
+}
+
+body .container .faq .faq-inner {
+  width: 1000px;
+  margin: auto;
+}
+
+body .container .faq .faq-inner h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+body .container .faq .faq-inner .accordion label span {
+  float: right;
+}
+
+body .container .faq .faq-inner .accordion input[name=faq-item] {
+  display: none;
+}
+
+body .container .faq .faq-inner .accordion input[name=faq-item] + label {
+  display: block;
+  background-color: #303030;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+body .container .faq .faq-inner .accordion input[name=faq-item] + label + span {
+  float: right;
+  font-size: 40px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+body .container .faq .faq-inner .accordion input[name=faq-item]:checked + label + .faq-content {
+  max-height: 500px;
+  padding: 15px;
+}
+
+body .container .faq .faq-inner .accordion input[name=faq-item]:checked + label span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body .container .faq .faq-inner .accordion .faq-content {
+  background-color: #303030;
+  padding: 0;
+  margin-bottom: 10px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+
+body .container .faq .faq-inner aside {
+  text-align: center;
+}
+
+body .container .faq .faq-inner aside p {
+  font-size: 24px;
+}
+
+body .container .faq .faq-inner aside .getstarted {
+  position: relative;
+  display: inline-block;
+}
+
+body .container .faq .faq-inner aside .getstarted input[type=email], body .container .faq .faq-inner aside .getstarted button {
+  height: 60px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+body .container .faq .faq-inner aside .getstarted input[type=email] {
+  width: 450px;
+  margin-right: -6px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+body .container .faq .faq-inner aside .getstarted input[type=email] + span {
+  color: #999;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+body .container .faq .faq-inner aside .getstarted button {
+  width: 220px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+body .container footer {
+  height: 200px;
+  padding: 50px 0;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5em;
+}
+
+body .container footer .footer-inner {
+  width: 850px;
+  margin: auto;
+}
+
+body .container footer .footer-inner .sitemap {
+  padding-bottom: 20px;
+}
+
+body .container footer .footer-inner .sitemap h6 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+body .container footer .footer-inner .sitemap .links .items {
+  display: inline-block;
+  width: 24%;
+  line-height: 2em;
+  vertical-align: top;
+}
+
+body .container footer .footer-inner .sitemap .links .items a {
+  display: block;
+  color: #777;
+  text-decoration: none;
+}
+
+body .container footer .footer-inner .sitemap .links .items a:hover {
+  text-decoration: underline;
+}
+
+body .modal-login {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+body .modal-login .login {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: black;
+  font-size: 15px;
+  color: #777;
+  font-weight: 300;
+  padding: 50px;
+}
+
+body .modal-login .login .btn-close {
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+body .modal-login .login h2 {
+  color: white;
+  font-size: 30px;
+}
+
+body .modal-login .login input[type=text], body .modal-login .login input[type=password] {
+  background-color: #333;
+  padding: 20px 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+body .modal-login .login input[type=button] {
+  width: 100%;
+  background-color: crimson;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 18px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body .modal-login .login .save-info {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+body .modal-login .login .save-info label {
+  float: left;
+}
+
+body .modal-login .login .save-info a {
+  float: right;
+}
+
+body .modal-login .login span {
+  display: block;
+  float: left;
+  margin: 30px 0;
+}
+
+body .modal-login .login span a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+}
+
+body .modal-login .login .save-info + span {
+  clear: both;
+}
+/*# sourceMappingURL=netflix-clone.css.map */
